@@ -1,0 +1,23 @@
+﻿================= Santos Brasil Connect ======================
+
+Usu�rio Operador j� cadastrado
+-------------------------------------------------
+E-mail: operador@gmail.com
+Senha: 123
+
+=================================================
+
+Usu�rio Transportadora j� cadastrados para testes
+-------------------------------------------------
+E-mail: leandro@teste.com
+Senha: 123
+
+E-mail: felipe@unip.com
+Senha: 123456
+
+==================================================
+
+Banco de dados
+--------------------------------------------------
+bd_stp
+==================================================

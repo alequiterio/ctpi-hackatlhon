@@ -1,0 +1,484 @@
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    margin: 0;
+}
+
+.topnav {
+    list-style-type: none;
+    height: 5em;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.topnav li {
+    float: left;
+}
+
+.topnav li a {
+    background-color: rgb(0, 0, 0);
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-family: 'Calibri';
+}
+
+.topnav img {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.topnav li a:hover:not(.active) {
+    background-color: rgb(0, 0, 0);
+    color: #007bff;
+}
+
+.topnav li a.active {
+    background-color: #007bff;
+}
+
+.topnav li.right {
+    float: right;
+}
+
+.useremp {
+    float: right;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: 'Calibri';
+    text-align: center;
+}
+
+.alerta {
+    padding: 25px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    margin: 10px;
+    font-size: 18px;
+    border-color: #e8273b;
+    color: #FFF;
+    background-color: #ed5565;
+}
+
+@media screen and (max-width: 600px) {
+    ul.topnav li.right,
+    ul.topnav li {
+        float: none;
+    }
+}
+
+li.fas.fa-boxes {}
+
+.menu {
+    background-color: #bbbbbb;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 90%;
+    font-family: calibri;
+}
+
+.menuo {
+    background-color: #bbbbbb;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 100%;
+    font-family: calibri;
+}
+
+.mainmenu,
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.mainmenu a {
+    display: block;
+    background-color: #bbbbbb;
+    text-decoration: none;
+    padding: 10px;
+    color: #000;
+}
+.vindo {
+    margin-left: 220px;
+    margin-top: 20px;
+    text-align: left;
+}
+.mainmenu i {
+    margin: 0px 20px 0px 0px;
+}
+
+.mainmenu a:hover {
+    background-color: #C5C5C5;
+}
+
+.mainmenu li:hover .submenu {
+    display: block;
+    margin-left: 5%;
+    max-height: 200px;
+}
+
+li a.active,
+li a:hover.active {
+    background-color: #000;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+.submenu a {
+    background-color: #555;
+}
+
+.submenu a:hover {
+    background-color: #555;
+}
+
+.submenu {
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: all 0.5s ease-out;
+}
+
+.formcadcam {
+    margin-left: 240px;
+    margin-top: 20px;
+    position: absolute;
+    display: block;
+    width: 350px;
+    height: auto;
+}
+
+.formcadnav {
+    margin-left: 240px;
+    margin-top: 20px;
+    position: absolute;
+    display: block;
+    width: 350px;
+    height: auto;
+}
+
+.formcadcontainer {
+    margin-left: 240px;
+    margin-top: 20px;
+    position: absolute;
+    display: block;
+    width: 350px;
+    height: auto;
+}
+
+.caminhaofila {
+    margin-left: 240px;
+    margin-top: 20px;
+    position: absolute;
+    display: block;
+    width: 350px;
+    height: auto;
+}
+
+.naviofila {
+    margin-left: 240px;
+    margin-top: 20px;
+    position: absolute;
+    display: block;
+    width: 350px;
+    height: auto;
+}
+
+.dadoscaminhaofila {
+    margin-left: 440px;
+    margin-top: -330px;
+    position: absolute;
+    display: block;
+    width: 350px;
+    height: auto;
+}
+
+.dadosnaviofila {
+    margin-left: 440px;
+    margin-top: -330px;
+    position: absolute;
+    display: block;
+    width: 350px;
+    height: auto;
+}
+
+.exibeContainersCaminhao {
+    margin-left: 440px;
+    margin-top: -300px;
+    position: absolute;
+    display: block;
+    width: 480px;
+    height: auto;
+}
+
+.exibeContainersNavio {
+    margin-left: 440px;
+    margin-top: -300px;
+    position: absolute;
+    display: block;
+    width: 480px;
+    height: auto;
+}
+
+.linhatotal {
+    margin-top: 20px;
+    margin-left: 0px;
+    position: relative;
+    width: 800px;
+}
+
+.linhatotalop {
+    margin-top: 05px;
+    margin-left: 280px;
+    position: absolute;
+    width: 800px;
+}
+
+.exibeContainersCaminhaofila {
+    margin-left: 0px;
+    position: absolute;
+    display: block;
+    width: 800px;
+    height: auto;
+    text-align: center;
+}
+
+.exibeContainersCaminhaofila legend,
+p {
+    text-align: left;
+}
+
+.exibeContainersnaviofila {
+    margin-left: 0px;
+    position: absolute;
+    display: block;
+    width: 800px;
+    height: auto;
+    text-align: center;
+}
+
+.exibeContainersnaviofila legend,
+p {
+    text-align: left;
+}
+
+.formcontato {
+    margin-left: 240px;
+    margin-top: 20px;
+    position: absolute;
+    display: block;
+    width: 350px;
+    height: auto;
+}
+
+.formcontato2 {
+    margin-left: 440px;
+    margin-top: -270px;
+    position: absolute;
+    display: block;
+    width: 350px;
+    height: auto;
+}
+
+.exibefilacaminhao {
+    margin-left: 680px;
+    margin-top: 20px;
+    position: absolute;
+    display: block;
+    width: 550px;
+    height: auto;
+    text-align: center;
+}
+
+.excluircam {
+    margin-left: 240px;
+    margin-top: 330px;
+    position: absolute;
+    display: block;
+    width: 350px;
+    height: auto;
+}
+
+.exibefilanavio {
+    margin-left: 680px;
+    margin-top: 20px;
+    position: absolute;
+    display: block;
+    width: 550px;
+    height: auto;
+    text-align: center;
+}
+
+.legendleft {
+    text-align: left;
+}
+
+.excluirnav {
+    margin-left: 240px;
+    margin-top: 330px;
+    position: absolute;
+    display: block;
+    width: 550px;
+    height: auto;
+}
+
+.linha {
+    width: 353px;
+    margin-left: 237px;
+    margin-top: 290px;
+    position: absolute;
+}
+
+.remover {
+    width: 400px;
+    margin-top: 300px;
+    margin-left: 690px;
+}
+
+.relatoriodopatio {
+    margin-left: 200px;
+    text-align: center;
+}
+
+.relatoriogeral {
+    margin-left: 200px;
+    text-align: center;
+}
+
+.excluircamoperador {
+    width: 250px;
+    margin-top: 30px;
+    margin-left: 330px;
+    text-align: center;
+    position: relative;
+}
+
+.excluircamoperador p {
+    text-align: center;
+}
+
+.operadorfilacaminhao {
+    width: 450px;
+    height: 350px;
+    margin-left: 250px;
+    margin-top: 10px;
+    overflow: auto;
+    position: relative;
+}
+
+.operadorfilacaminhao .legendleft {
+    text-align: center;
+}
+
+.operadorfilanavio {
+    width: 450px;
+    height: 350px;
+    margin-left: 30px;
+    margin-top: 10px;
+    position: relative;
+    overflow: auto;
+}
+
+.operadorfilanavio .legendleft {
+    text-align: center;
+}
+
+.excluirnavoperador {
+    width: 250px;
+    margin-top: 30px;
+    margin-left: 150px;
+    text-align: center;
+    position: relative;
+}
+
+.excluirnavoperador p {
+    text-align: center;
+}
+
+.h5 .operador {
+    margin-left: 320px;
+    margin-top: 100px;
+}
+
+.operadortitulo {
+    text-align: center;
+    margin-left: px;
+}
+
+.linhatotalopt {
+    margin-top: 05px;
+    margin-left: 220px;
+    position: relative;
+    width: 1000px;
+}
+
+.filaop {
+    height: 600px;
+    ;
+    width: 720px;
+    background-color: rgb(245, 245, 245);
+}
+
+.filaopn {
+    height: 600px;
+    width: 550px;
+    background-color: rgb(221, 199, 199);
+    margin-left: 720px;
+    margin-top: -610px;
+}

@@ -1,0 +1,20 @@
+sistema spt
+
+
+usuario: AUGUSTO123
+senha: 123456789
+
+usuario: MATEUS123
+senha: 123456987
+
+sistema gestão
+
+modo operador master
+
+usuario: operador@gmail.com
+senha: 123
+
+modo transportador
+
+usuario: renier@unip.com 
+senha: 123

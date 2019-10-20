@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url("img/close-up-code-coding-1089440.jpg");;
+    align-items: center;
+    
+}
+
+#video{
+    border-radius: 150px;
+}
+
+

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>STP Connect | Siscomex</title>
+
+    <!-- Bootstrap -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body ng-app="app">
+
+    <div ng-controller="DashboardCtrl">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6">
+            <select class="form-control" ng-model="input.ambiente">
+              <option value="https://portalunico.siscomex.gov.br">Produção</option>
+              <option value="https://val.portalunico.siscomex.gov.br">Treinamento</option>
+              <option value="https://hom.stpconnect.serpro.gov.br">Homologação</option>
+            </select>
+          </div>          
+          <div class="col-xs-6">
+            <select class="form-control" ng-model="input.perfil">
+              <option value="IMPEXP">Importador/Exportador</option>
+              <option value="DEPOSIT">Depositário</option>
+              <option value="TRANSPORT">Transportador</option>
+              <option value="OPERPORT">Operador Portuário</option>
+              <option value="AGEREMESS">Remessa Expressa</option>
+              <option value="AJUDESPAC">Ajudante de Despachante</option>
+              <option value="HABILITAD">Habilitador</option>
+              <option value="PUBLICO">Público</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6">
+            <button ng-click="setaURL('dueResumida')" type="button" class="btn btn-primary btn-block">Consulta DUE Resumida</button>
+          </div>
+          <div class="col-xs-6">
+            <button ng-click="setaURL('cctConsultaMRUC')" type="button" class="btn btn-primary btn-block">[CCT] Consulta MRUC</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6">
+            <button ng-click="setaURL('dueCompleta')" type="button" class="btn btn-primary btn-block">Consulta DUE Completa</button>
+          </div>
+          <div class="col-xs-6">
+            <button ng-click="setaURL('rucCompleta')" type="button" class="btn btn-primary btn-block">Consulta RUC completa</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6">
+            <button ng-click="setaURL('cctConsultaDUERUC')" type="button" class="btn btn-primary btn-block">[CCT] Consulta DUE/RUC</button>
+          </div>
+          <div class="col-xs-6">
+            <button ng-click="setaURL('cctConsultaCTN')" type="button" class="btn btn-primary btn-block">[CCT] Consulta Contêiner</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6">
+            <button ng-click="setaURL('cctConsultaDOC')" type="button" class="btn btn-primary btn-block">[CCT] Consulta Documento de transporte</button>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <form>
+              <div class="form-group">
+                <input type="text" ng-model="input.url" class="form-control" placeholder="URL">
+              </div>
+              <button type="button" ng-click="chamar()" class="btn btn-block btn-success">Chamar</button>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <h5>Body:</h5>
+            <textarea class="form-control" rows="30">{{input.response.body | json}}</textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <h5>Headers:</h5>
+            <textarea class="form-control" rows="10">{{input.response.headers | json}}</textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Angular -->
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins)
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+
+    <!-- Include all compiled plugins (below), or include individual files as needed 
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>-->
+
+    <!-- Angular bootstrap -->
+    <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+    <!-- Clipboard -->
+    <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/master/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="bower_components/ngclipboard/dist/ngclipboard.min.js"></script>
+
+
+    <!-- App -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers/controllers.js"></script>
+    <script src="js/controllers/dashboard.js"></script>
+  </body>
+</html>
