@@ -1,6 +1,6 @@
 ﻿# STP Connect
 
-Projeto elaborado no evento de tecnologia HACKATHON DA UNIP
+Projeto elaborado para rotinas diárias 
 ## Getting Started
 
 Siga todos os passos.
